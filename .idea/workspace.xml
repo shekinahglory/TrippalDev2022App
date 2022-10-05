@@ -4,11 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c80063-f33d-4cc9-a91b-59da7a7c7a1e" name="Changes" comment="" />
+    <list default="true" id="33c80063-f33d-4cc9-a91b-59da7a7c7a1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/customerauthclasses/UserAuthenticationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/customerauthclasses/UserAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/MainSecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/MainTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/domain/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/domain/generators/UserIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/repository/AppUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/service/ApplicationUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/service/UserCreationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/SecurityServerApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,18 +53,53 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/shekinah-b/Documents/springcloud/trippalApp/securityServer/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "spring.configuration.checksum": "cdd7fea15ab50b45f8b628d6e0c11e9c"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.appstream.configuration" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/securityServer/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SecurityServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="securityServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.appstream.SecurityServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appstream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SecurityServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,7 +108,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664898681864</updated>
-      <workItem from="1664898686404" duration="3777000" />
+      <workItem from="1664898686404" duration="4291000" />
+      <workItem from="1664909727445" duration="25665000" />
     </task>
     <servers />
   </component>
