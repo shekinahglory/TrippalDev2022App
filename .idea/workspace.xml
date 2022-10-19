@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c80063-f33d-4cc9-a91b-59da7a7c7a1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/customerauthclasses/UserAuthenticationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/customerauthclasses/UserAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/MainSecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/MainTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/domain/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/domain/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/domain/generators/UserIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/service/ApplicationUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/service/UserCreationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityServer/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/ConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/helper/BeanUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/helper/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/ProtectedEndpointController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/securityServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/SecurityServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/SecurityServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/SecurityServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/MainTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/controller/MainTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/java/com/appstream/filters/UserAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securityServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/securityServer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/shekinah-b/Documents/springcloud/trippalApp/securityServer/src/main/resources",
+    "last_opened_file_path": "/home/shekinah-b/Documents/springcloud/trippalApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1664898681864</updated>
       <workItem from="1664898686404" duration="4291000" />
-      <workItem from="1664909727445" duration="25665000" />
+      <workItem from="1664909727445" duration="26156000" />
+      <workItem from="1665060051709" duration="17998000" />
     </task>
     <servers />
   </component>

@@ -11,6 +11,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.stereotype.Component;
@@ -33,12 +35,13 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public class UserAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
 //    @Value("${authKey}")
-    private String key = "asdfadsa9jqw3ejdkd9dk33m3d3-30";
+    private String key;
 
     private final AuthenticationManager authenticationManager;
 
-    public UserAuthenticationFilter(AuthenticationManager authenticationManager) {
+    public UserAuthenticationFilter(AuthenticationManager authenticationManager, String key) {
         this.authenticationManager = authenticationManager;
+        this.key = key;
     }
 
     @Override
@@ -65,6 +68,8 @@ public class UserAuthenticationFilter extends UsernamePasswordAuthenticationFilt
 
     }
 
+
+
     @Override
     protected void successfulAuthentication(HttpServletRequest request,
                                             HttpServletResponse response,
@@ -73,14 +78,23 @@ public class UserAuthenticationFilter extends UsernamePasswordAuthenticationFilt
         String username = authResult.getPrincipal().toString();
 
         Algorithm algorithm = Algorithm.HMAC512(key.getBytes()  );
+        var authorities =
+                authResult.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList());
         String token = JWT.create()
                 .withSubject(username)
                 .withClaim("roles",
-                        authResult.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList()))
+                       authorities)
                 .withExpiresAt(new Date(System.currentTimeMillis() + 10 * 60 * 1000))
                 .withIssuer(request.getRequestURL().toString())
                 .sign(algorithm);
 
+        UsernamePasswordAuthenticationToken authenticationToken =
+                new UsernamePasswordAuthenticationToken(username,null,
+                        authorities.stream().map(SimpleGrantedAuthority::new).toList());
+        SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+        log.info("Authentication TOken" , authenticationToken);
+        System.out.println(authenticationToken);
+        log.info("Context info", SecurityContextHolder.getContext().getAuthentication().getAuthorities());
         Map<String, String> tokens = new HashMap<>();
         tokens.put("access_token", token);
         new ObjectMapper().writeValue(response.getOutputStream(), tokens);
